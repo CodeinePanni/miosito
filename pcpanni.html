@@ -2,16 +2,94 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Specifiche Tecniche - TechLab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post del Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            /* Percorso dell'immagine */
+            background-image: url('sfondosito.jpg'); /* Cambia con il nome dell'immagine */
+            background-size: cover; /* Copre tutta la pagina */
+            background-repeat: no-repeat; /* Non ripete l'immagine */
+            background-position: center; /* Centra l'immagine */
+            background-attachment: fixed; /* Sfondo fisso quando si scorre la pagina */
+            margin: 0; /* Elimina il margine predefinito del body */
+            padding: 0; /* Elimina il padding predefinito del body */
+        }
+        .post {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .post-title {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .post-meta {
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .post-content {
+            font-size: 1.1em;
+            color: #444;
+        }
+        .post-content p {
+            margin: 15px 0;
+        }
+        .tabella-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .custom-img {
+            display: block;
+
+            width: 45%;
+            height: auto;
+        }
+    </style>
 </head>
-<body style="display:  align-items: center;">
-    <h1>Specifiche Tecniche del PC</h1>
-    <p>CPU: Intel i7-14700kf</p>
-    <p>Scheda Grafica: NVIDIA RTX 4080</p>
-    
-    <!-- Aggiungi altre specifiche tecniche qui -->
-    
-    <!-- Bottone per tornare alla pagina Home -->
-    <button onclick="location.href='index.html'" style=" bottom: 20px;">Home</button>
+<body>
+    <div class="post">
+        <h1 class="post-title">PC Desktop Intel i7-14700KF con RTX 4080</h1>
+        <div class="post-meta">
+            Pubblicato il <time datetime="2024-11-28">28 Novembre 2024</time> da <strong>Mattia Panizzolo</strong>
+        </div>
+        <div class="post-content">
+            <p>🖥️ **Dopo un mese di utilizzo del mio nuovo PC con Intel i7-14700KF e NVIDIA RTX 4080, ecco la mia recensione!**</p>
+            <p>Un computer pensato per i gamers più esigenti e i professionisti della grafica 3D. Ma la domanda è: <strong>ne vale la pena?</strong> 🤔</p>
+            <h3>Pro:</h3>
+            <ul>
+                <li>⚡ **Prestazioni eccezionali**: Il processore Intel i7-14700KF, con i suoi 20 core e 28 thread, è una macchina da guerra per multitasking, gaming e editing video professionale. 🚀</li>
+                <li>🎮 **Grafica strabiliante**: La NVIDIA RTX 4080 offre performance incredibili con il supporto al ray tracing di ultima generazione e DLSS 3. I giochi girano in 4K a dettagli ultra senza problemi. 🕹️</li>
+                <li>🌀 **Raffreddamento efficiente**: Nonostante le alte performance, il sistema di raffreddamento rimane silenzioso ed efficiente, anche durante sessioni di lavoro intenso. ❄️</li>
+                <li>🔌 **Versatilità e upgrade**: La configurazione permette di aggiungere facilmente più memoria RAM o dischi SSD in futuro. 🛠️</li>
+            </ul>
+            <h3>Contro:</h3>
+            <ul>
+                <li>💸 **Prezzo elevato**: Questa configurazione si aggira intorno ai 2200€ - 3000€, un costo importante, giustificato però dalle prestazioni. 💰</li>
+                <li>⚡ **Consumi energetici**: Sotto carico massimo, il consumo di energia può risultare significativo. Non adatto a chi cerca soluzioni eco-friendly. 🌍</li>
+                <li>🔊 **Dimensioni del case**: Il case è piuttosto voluminoso, quindi richiede spazio dedicato sulla scrivania o in un ambiente ventilato. 📏</li>
+            </ul>
+            <p>Che ne pensi? Ti piacerebbe avere una macchina del genere per il gaming o la grafica? Facci sapere la tua opinione nei commenti Facebook! 💬👇</p>
+        
+           
+            <div class="tabella-img">
+            <img src="miopc.jpg" alt="PC con Intel i7 e RTX 4080" style="max-width: 100%; height: auto;" class="custom-img">
+                &nbsp;&nbsp;
+            <img src="miopc1.jpg" alt="miopc2" style="max-width: 100%; height: auto;" class="custom-img">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+

@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <title>TechLab - Home</title>
     <style>
+        body{
+
+            /* Percorso dell'immagine */
+            background-image: url('sfondosito.jpg'); /* Cambia con il nome dell'immagine */
+            background-size: cover; /* Copre tutta la pagina */
+            background-repeat: no-repeat; /* Non ripete l'immagine */
+            background-position: center; /* Centra l'immagine */
+            background-attachment: fixed; /* Sfondo fisso quando si scorre la pagina */
+            margin: 0; /* Elimina il margine predefinito del body */
+            padding: 0; /* Elimina il padding predefinito del body */
+        }
         h1 {
             text-align: center;
         }
@@ -18,6 +29,11 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+            max-width: 90%;
+            border:none;overflow:hidden;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+
         }
         .tabella-img {
             display: flex;
@@ -30,24 +46,27 @@
             width: 25%;
             height: auto;
         }
+        .custom1-img {
+            display: block;
+
+            width: 30%;
+            height: auto;
+        }
         .side-by-side {
             display: flex;
             justify-content: space-around;
         }
-        iframe {
-        max-width: 90%;
-        
-        }
     </style>
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self' https://www.facebook.com">
 </head>
 <body>
 
     <img src="titolosito.png" alt="Immagine del titolo" class="titolo-img">
     <br><br> <!-- Aggiunta di due righe vuote -->
     <div class="side-by-side">
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02juGfD91Gw47bJ1rD1UXwcXXercCZYsxMHsFa3XNk4SQYxSzvukQ67ZA17iYyYNKFl%26id%3D61553685574179&show_text=true&width=500" width="500" height="259" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid025Txv25bp8B3Gb1Se2aEZQbiVVsdsHNyRYrfXW25y3Ef9BrSWfjJtWKMvEr82dCNYl%26id%3D61553685574179&show_text=true&width=500" width="500" height="461" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02MdkaAPWY2rVgb71C19BTFAbrRXu6UikX8LEgDVTTpZ3MzummhrahoSvCFjHEjcQal%26id%3D61553685574179&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"></iframe>
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02juGfD91Gw47bJ1rD1UXwcXXercCZYsxMHsFa3XNk4SQYxSzvukQ67ZA17iYyYNKFl%26id%3D61553685574179&show_text=true&width=500" width="500" height="259" title="Post1" allowfullscreen></iframe>
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid025Txv25bp8B3Gb1Se2aEZQbiVVsdsHNyRYrfXW25y3Ef9BrSWfjJtWKMvEr82dCNYl%26id%3D61553685574179&show_text=true&width=500" width="500" height="461" title="Post2" allowfullscreen></iframe>
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02MdkaAPWY2rVgb71C19BTFAbrRXu6UikX8LEgDVTTpZ3MzummhrahoSvCFjHEjcQal%26id%3D61553685574179&show_text=true&width=500" width="500" height="250" title="Post3" allowfullscreen></iframe>
     </div>
     <br><br> <!-- Aggiunta di due righe vuote -->
     <table border="1">
@@ -56,13 +75,33 @@
         </tr>
         <tr>
             <td style="text-align:center;">
-                Perdonateci per l’attesa, abbiamo attraversato un periodo molto impegnativo con il lavoro ma ora ci siamo completamente 😎. Volevo aggiornarvi sull'ultimo progetto pubblicato a novembre: il PC funziona alla grande e lo utilizzo costantemente da allora. Nel frattempo, per soddisfare la “malattia” per le prestazioni, ho deciso di cambiare la scheda video e ho scelto una NVIDIA 4080. Le prestazioni sono incredibili, come d’altro canto ci si aspetterebbe da una build di fascia alta. Fatemi sapere nei commenti cosa ne pensate!😉
+                Perdonateci per l'attesa, abbiamo attraversato un periodo molto impegnativo con il lavoro ma ora ci siamo completamente 😎. </p>
+                Volevo aggiornarvi sull'ultimo progetto pubblicato a novembre: il PC funziona alla grande e lo utilizzo costantemente da allora.</p>
+                 Nel frattempo, per soddisfare la “malattia” per le prestazioni, ho deciso di cambiare la scheda video e ho scelto una NVIDIA 4080.</p>
+                  Le prestazioni sono incredibili, come d’altro canto ci si aspetterebbe da una build di fascia alta.</p>
+                   Fatemi sapere nei commenti cosa ne pensate!😉
                 <br><br>
                 <div class="tabella-img">
                     <img src="miopc.jpg" alt="Immagine del PC" class="custom-img">
                     &nbsp;&nbsp;
                     <img src="miopc1.jpg" alt="Seconda immagine del PC" class="custom-img">
                 </div>
+            </td>
+        </tr>
+        <!-- Nuove righe -->
+        <tr>
+            <td style="text-align:center;"><a href="ipad-air-2024.html">Ipad AIR 2024 con cip M2</a></td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">
+                <p>📱 **Un mese fa ho deciso di acquistare un iPad Air 2024 con chip M2. **</p>
+             <p>Dopo un mese di utilizzo la domanda che imagino possiate farci é:</p>
+             <p> Ne vale davvero la pena? 🤔</p>
+             <p> Scopriamolo assieme leggendo qui sopra schiacciando sul titolo😎 </p>
+             <div class="tabella-img">
+                <img src="ipadsitoapple.png" alt="ImmagineIpad" class="custom1-img">
+                
+            </div>
             </td>
         </tr>
     </table>
