@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <title>TechLab - Home</title>
     <style>
+         h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            text-transform: uppercase; /* Maiuscolo */
+            text-align: center;
+            letter-spacing: 5px; /* Spaziatura tra lettere */
+            background: linear-gradient(90deg, #ff7eb3, #ff758c, #f3a683); /* Gradiente del testo */
+            -webkit-background-clip: text; /* Ritaglio del background sul testo */
+            -webkit-text-fill-color: transparent; /* Trasparenza per il gradiente */
+            animation: glow 2s infinite alternate; /* Effetto animato */
+        }
         body{
-
             /* Percorso dell'immagine */
             background-image: url('sfondosito.jpg'); /* Cambia con il nome dell'immagine */
             background-size: cover; /* Copre tutta la pagina */
@@ -15,9 +25,7 @@
             margin: 0; /* Elimina il margine predefinito del body */
             padding: 0; /* Elimina il padding predefinito del body */
         }
-        h1 {
-            text-align: center;
-        }
+
         .titolo-img {
             display: block;
             margin-left: auto;
@@ -56,22 +64,97 @@
             display: flex;
             justify-content: space-around;
         }
+            @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px #ff758c, 0 0 10px #ff758c, 0 0 15px #ff758c, 0 0 20px #f3a683;
+            }
+            100% {
+                text-shadow: 0 0 10px #f3a683, 0 0 20px #f3a683, 0 0 30px #ff758c, 0 0 40px #ff7eb3;
+            }
+        }
+        .container {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap; /* Permette di adattarsi su più righe se lo spazio è insufficiente */
+            gap: 20px; /* Spaziatura tra le immagini */
+            justify-content: center; /* Centra il contenitore */
+            padding: 20px;
+
+        }
+        .image-box {
+            flex: 1; /* I box si adattano equamente alla larghezza disponibile */
+            max-width: 33%; /* Massimo un terzo della larghezza */
+            min-width: 250px; /* Dimensione minima per box troppo piccoli */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 400px; /* Limita la larghezza massima delle immagini */
+            max-height: max-content;
+        }
+        .image-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .image-box p {
+            padding: 10px;
+            font-size: 1em;
+            text-align: center;
+            color: #333;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-wrap: wrap; /* Le immagini andranno a capo su schermi più piccoli */
+            }
+            .image-box {
+                max-width: 100%; /* Il box occupa tutta la larghezza disponibile */
+            }
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+        td,
+        th {
+            border: none;
+        }
     </style>
     <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self' https://www.facebook.com">
 </head>
 <body>
+    <h1>TECHLAB</h1>
+    <div class="container">
+        <!-- Prima immagine -->
+        <div class="image-box">
+            <img src="fb1.png" alt="Consigli da nerd">
 
-    <img src="titolosito.png" alt="Immagine del titolo" class="titolo-img">
+        </div>
+        <!-- Seconda immagine -->
+        <div class="image-box">
+            <img src="fb2.png" alt="iPad Air 2024">
+
+        </div>
+        <!-- Terza immagine -->
+        <div class="image-box">
+            <img src="fb3.png" alt="Storia di Tech Lab Varese">
+
+        </div>
+    <!--<img src="titolosito.png" alt="Immagine del titolo" class="titolo-img">-->
     <br><br> <!-- Aggiunta di due righe vuote -->
-    <div class="side-by-side">
+    <!--<div class="side-by-side">
         <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02juGfD91Gw47bJ1rD1UXwcXXercCZYsxMHsFa3XNk4SQYxSzvukQ67ZA17iYyYNKFl%26id%3D61553685574179&show_text=true&width=500" width="500" height="259" title="Post1" allowfullscreen></iframe>
         <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid025Txv25bp8B3Gb1Se2aEZQbiVVsdsHNyRYrfXW25y3Ef9BrSWfjJtWKMvEr82dCNYl%26id%3D61553685574179&show_text=true&width=500" width="500" height="461" title="Post2" allowfullscreen></iframe>
         <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02MdkaAPWY2rVgb71C19BTFAbrRXu6UikX8LEgDVTTpZ3MzummhrahoSvCFjHEjcQal%26id%3D61553685574179&show_text=true&width=500" width="500" height="250" title="Post3" allowfullscreen></iframe>
-    </div>
+    </div>-->
     <br><br> <!-- Aggiunta di due righe vuote -->
-    <table border="1">
+    <table >
         <tr>
-            <td style="text-align:center;"><a href="pcpanni.html">Intel i7-14700kf con rtx4080</a></td>
+            <td style="text-align:center;font-size: 2em; font-weight: bold;"><a href="pcpanni.html">INTEL I7-14700KF CON RTX4080</a></td>
         </tr>
         <tr>
             <td style="text-align:center;">
@@ -90,7 +173,7 @@
         </tr>
         <!-- Nuove righe -->
         <tr>
-            <td style="text-align:center;"><a href="ipad-air-2024.html">Ipad AIR 2024 con cip M2</a></td>
+            <td style="text-align:center;font-size: 2em; font-weight: bold;"><a href="ipad-air-2024.html">IPAD AIR 2024 CON CIP M2</a></td>
         </tr>
         <tr>
             <td style="text-align:center;">
@@ -100,10 +183,11 @@
              <p> Scopriamolo assieme leggendo qui sopra schiacciando sul titolo😎 </p>
              <div class="tabella-img">
                 <img src="ipadsitoapple.png" alt="ImmagineIpad" class="custom1-img">
-                
+
             </div>
             </td>
         </tr>
+
     </table>
 </body>
 </html>
